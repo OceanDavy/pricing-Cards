@@ -4,7 +4,7 @@ function checkTime(){
     let professionalPrice = document.getElementById("professionalPrice");
     let masterPrice = document.getElementById("masterPrice");
 
-    if(toggle.checked == false){
+    if(toggle.checked == true){
         basicPrice.innerHTML = "&dollar;199.99";
         professionalPrice.innerHTML = "&dollar;249.99";
         masterPrice.innerHTML = "&dollar;399.99";
