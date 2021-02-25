@@ -1,0 +1,313 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+html body section.root {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6fe;
+  background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+}
+
+html body section.root div.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+html body section.root div.main div.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+html body section.root div.main div.pricing h1 {
+  font-size: 30px;
+  color: #6d708d;
+}
+
+html body section.root div.main div.pricing div.toggle {
+  padding-top: 10px;
+  color: #b3b5c6;
+}
+
+html body section.root div.main div.pricing div.toggle .anually {
+  margin-right: 12px;
+}
+
+html body section.root div.main div.pricing div.toggle .monthly {
+  margin-left: 12px;
+}
+
+html body section.root div.main div.pricing div.toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 34px;
+}
+
+html body section.root div.main div.pricing div.toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+html body section.root div.main div.pricing div.toggle .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  background-color: #696fdd;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+html body section.root div.main div.pricing div.toggle .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+html body section.root div.main div.pricing div.toggle .switch input:checked + .slider {
+  background-color: #696fdd;
+}
+
+html body section.root div.main div.pricing div.toggle .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #696fdd;
+          box-shadow: 0 0 1px #696fdd;
+}
+
+html body section.root div.main div.pricing div.toggle .switch input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+html body section.root div.main div.pricing div.toggle .switch .slider.round {
+  border-radius: 34px;
+}
+
+html body section.root div.main div.pricing div.toggle .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+html body section.root div.main div.boxServices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body section.root div.main div.boxServices div.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 280px;
+  border-radius: 10px;
+}
+
+html body section.root div.main div.boxServices div.services h2 {
+  font-size: 50px;
+  line-height: 0;
+}
+
+html body section.root div.main div.boxServices div.services button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 85%;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 25px;
+}
+
+html body section.root div.main div.boxServices div.services span.line {
+  border-top: 1px solid #b3b5c6;
+  width: 80%;
+}
+
+html body section.root div.main div.boxServices div.services span.linePro {
+  border-top: 1px solid rgba(255, 255, 255, 0.253);
+  width: 80%;
+}
+
+html body section.root div.main div.boxServices #basic {
+  height: 380px;
+  background: white;
+  color: #494c5f;
+  -webkit-box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.048);
+          box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.048);
+}
+
+html body section.root div.main div.boxServices #basic p {
+  color: #6d708d;
+}
+
+html body section.root div.main div.boxServices #basic button {
+  border: 1px solid white;
+  background: linear-gradient(150deg, #a3a8f0, #696fdd);
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+html body section.root div.main div.boxServices #basic button:hover {
+  background: transparent;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+html body section.root div.main div.boxServices #professional {
+  height: 420px;
+  background: linear-gradient(150deg, #a3a8f0, #696fdd);
+}
+
+html body section.root div.main div.boxServices #professional h2, html body section.root div.main div.boxServices #professional p {
+  color: white;
+}
+
+html body section.root div.main div.boxServices #professional button {
+  background: white;
+  border: 1px solid white;
+  color: #696fdd;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+html body section.root div.main div.boxServices #professional button:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+html body section.root div.main div.boxServices #master {
+  height: 380px;
+  background: white;
+  color: #494c5f;
+  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.048);
+          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.048);
+}
+
+html body section.root div.main div.boxServices #master p {
+  color: #6d708d;
+}
+
+html body section.root div.main div.boxServices #master button {
+  border: 1px solid white;
+  background: linear-gradient(150deg, #a3a8f0, #696fdd);
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+html body section.root div.main div.boxServices #master button:hover {
+  background: transparent;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media screen and (max-width: 970px) {
+  html body {
+    width: auto;
+    height: auto;
+  }
+  html body section.root {
+    width: auto;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  html body section.root div.boxServices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html body section.root div.boxServices div.services:nth-child(2) {
+    margin: 2em 0px 2em 0px;
+  }
+  html body section.root div.boxServices #professional {
+    height: 380px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

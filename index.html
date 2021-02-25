@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="/scss/main.css">
+  <script src="/js/toggle.js"></script>
+  <!--Font Size Montserrat and Icon-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body>
+  
+  <section class="root">
+
+    <div class="main">
+
+      <div class="pricing">
+        <h1>Our Pricing</h1>
+        <div class="toggle">
+          <label class="anually">Anually</label>
+          <!--Toggle-->
+          <label class="switch">
+            <input type="checkbox" id="checkbox" onclick="checkTime()">
+            <span class="slider round"></span>
+          </label>
+          <!--Toggle-->
+          <label class="monthly">Monthly</label>
+        </div>
+      </div>
+      
+
+      <div class="boxServices">
+        <!--Options Basic -->
+        <div class="services" id="basic">
+          <p class="title">Basic</p>
+          <h2 id="basicPrice">&dollar;199.99</h2>
+          <span class="line"></span>
+          <p class="info" id="basicInfo">500 GB Storage</p>
+          <span class="line"></span>
+          <p class="info"  id="basicInfo">2 Users Allowed</p>
+          <span class="line"></span>
+          <p class="info" id="basicInfo">Send up to 3 GB</p>
+          <span class="line"></span>
+          <button>LEARN MORE</button>  
+        </div>
+        <!--Options Professional -->
+        <div class="services" id="professional"> 
+          <p class="title">Professional</p>
+          <h2 id="professionalPrice">&dollar;249.99</h2>
+          <span class="linePro"></span>
+          <p class="info" id="professionalInfo">1 TB Storage</p>
+          <span class="linePro"></span>
+          <p class="info" id="professionalInfo">5 Users Allowed</p>
+          <span class="linePro"></span>
+          <p class="info" id="professionalInfo">Send up to 10 GB</p>
+          <span class="linePro"></span>
+          <button>LEARN MORE</button> 
+        </div>
+        <!--Options Master -->
+        <div class="services" id="master"> 
+          <p class="title">Master</p>
+          <h2 id="masterPrice">&dollar;399.99</h2>
+          <span class="line"></span>
+          <p class="info" id="masterInfo">2 TB Storage</p>
+          <span class="line"></span>
+          <p class="info" id="masterInfo">10 Users Allowed</p>
+          <span class="line"></span>
+          <p class="info" id="masterInfo">Send up to 20 GB</p>
+          <span class="line"></span>
+          <button>LEARN MORE</button>  
+        </div>
+      </div>
+
+    </div> <!--End of Main-->
+  </section> <!--End of Root-->
+
+
+  <script>
+
+  </script>
+</body>
+</html>

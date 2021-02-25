@@ -1,0 +1,265 @@
+@import "variables";
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    body{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;;
+            // Section with Flex to move the content to the center
+        section.root{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $myVeryLightGrayishBlue;
+
+            background-image: 
+            url(/images/bg-top.svg),
+            url(/images/bg-bottom.svg);
+            
+            background-position:
+            top right,
+            bottom left;
+
+            background-repeat:
+            no-repeat;
+     
+
+            // div that contain both divs (Title/Toggle part and Services part)
+            div.main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                z-index: 2;
+                // Title and Toggle
+                div.pricing{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    h1{
+                        font-size: 30px;
+                        color: $myGrayishBlue;
+                    }
+                    //Toggle Rounded Creation
+                    div.toggle{
+                        padding-top: 10px;
+                        color: $myLightGrayishBlue;
+
+                        .anually{
+                            margin-right: 12px;
+                        }
+                        .monthly{
+                            margin-left: 12px;
+                        }
+                        .switch{
+                            position: relative;
+                            display: inline-block;
+                            width: 55px;
+                            height: 34px;
+
+                            input{
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+                            .slider{
+                                position: absolute;
+                                cursor: pointer;
+                                top: -5px;
+                                left: 0;
+                                right: 0;
+                                bottom: 5px;
+                                background-color: hsl(237, 63%, 64%);
+                                -webkit-transition: .4s;
+                                transition: .4s;
+                            }
+                            .slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 24px;
+                                width: 24px;
+                                left: 4px;
+                                bottom: 5px;
+                                background-color: white;
+                                -webkit-transition: .4s;
+                                transition: .4s;
+                              }
+                              input:checked + .slider {
+                                background-color:hsl(237, 63%, 64%);
+                              }
+                              
+                              input:focus + .slider {
+                                box-shadow: 0 0 1px hsl(237, 63%, 64%);
+                              }
+                              
+                              input:checked + .slider:before {
+                                -webkit-transform: translateX(23px);
+                                -ms-transform: translateX(23px);
+                                transform: translateX(23px);
+                              }
+                              .slider.round {
+                                border-radius: 34px;
+                              }
+                              
+                              .slider.round:before {
+                                border-radius: 50%;
+                              }
+
+                        }
+                    }
+                }
+
+
+                // Services 
+                div.boxServices{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div.services{ // each box/services (Basic, Professional, Master)
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 280px;
+                        border-radius: 10px;
+
+                        h2{
+                            font-size: 50px;
+                            line-height: 0;
+                        }
+
+                        button{
+                            border: 1px solid transparent;
+                            border-radius: 4px;
+                            width: 85%;
+                            padding: 10px;
+                            letter-spacing: 2px;
+                            font-size: 12px;
+                            font-family: 'Montserrat', sans-serif;
+                            
+                            margin: 25px;
+                        }
+
+                        span.line{ //Lines that separate each info (storage, GB, users for Basic and Master)
+                            border-top: 1px solid $myLightGrayishBlue;
+                            width: 80%;
+                        }
+                        span.linePro{ //Lines that separate each info (storage, GB, users for Profesional)
+                            border-top: 1px solid rgba(255, 255, 255, 0.253);
+                            width: 80%;
+                        }
+                    }
+                    #basic{ //Basic Services
+                        height: 380px;
+                        background: white;
+                        color: $myDarkGrayishBlue;
+                        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.048);
+                        p{
+                            color: $myGrayishBlue;
+                        }
+                        button{
+                            border: 1px solid white;
+                            background: $myLinearGradient;
+                            color: white;
+                            transition: .2s;
+                        }
+                        button:hover{
+                            background: transparent;
+                            border: 1px solid hsl(237, 63%, 64%);
+                            color: hsl(237, 63%, 64%);
+                            cursor: pointer;
+                            transition: .2s;
+                        }
+                    }
+
+                    #professional{ //Pro Services
+                        height: 420px;
+                        background: $myLinearGradient;
+                        
+                        h2,p{
+                            color: white;
+                        }
+                        button{
+                            background: white;
+                            border: 1px solid white;
+                            color: hsl(237, 63%, 64%);
+                            transition: .2s;
+                        }
+                        button:hover{
+                            background: transparent;
+                            border: 1px solid white;
+                            color: white;
+                            cursor: pointer;
+                            transition: .2s;
+                        }
+                    }
+                    #master{ //Master Services
+                        height: 380px;
+                        background: white;
+                        color: $myDarkGrayishBlue;
+                        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.048);
+                        p{
+                            color: $myGrayishBlue;
+                        }
+                        button{
+                            border: 1px solid white;
+                            background: $myLinearGradient;
+                            color: white;
+                            transition: .2s;
+                        }
+                        button:hover{
+                            background: transparent;
+                            border: 1px solid hsl(237, 63%, 64%);
+                            color: hsl(237, 63%, 64%);
+                            cursor: pointer;
+                            transition: .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $smallScreen){
+    html{
+        body{
+            width: auto;
+            height: auto;
+            section.root{
+                width: auto;
+                height: auto;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                div.boxServices{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+        
+                    div.services:nth-child(2){
+                        margin: 2em 0px 2em 0px;
+                    }
+                    #professional{
+                        height: 380px;
+                    }
+            }
+        }
+
+        }
+        
+    } 
+}
